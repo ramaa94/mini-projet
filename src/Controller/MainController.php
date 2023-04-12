@@ -26,9 +26,15 @@ class MainController extends AbstractController
     {
         return $this-> render('main/compte.html.twig');
     }
+
     #[Route('/test', name: 'test')]
     public function test()
     {
         return $this-> render('main/test.html.twig');
+    }
+    #[Route('/clubs', name: 'c_home')]
+    public function clubs_home()
+    {
+        return $this-> render('main/clubs_h.html.twig');
     }
 }

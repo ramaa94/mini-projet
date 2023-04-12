@@ -19,7 +19,7 @@ li{
 
 }
 a{
-    color: #E69EFF;
+    color: white;
     text-decoration: none;
     width:60px;
     transition: 0.7s ease;
@@ -37,7 +37,7 @@ nav{
     align-items: center;
     background-color: rgba(26, 25, 25,0.3);
     border-bottom-color:#E69EFF ;
-    border-bottom: 1px ridge #65308F;
+    border-bottom: 1px ridge gray;
     text-decoration: none;
     
 }
@@ -80,9 +80,7 @@ span{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-weight: 900;}
 body{
-    background-image: url("/assets/images/home.jpg");
-    /* background-repeat: repeat; */
-    background-size: 100% 1200px;
+   
 
     color: white;
     display: flex;

@@ -1,0 +1,92 @@
+@import 'https://fonts.googleapis.com/css?family=Sintony';
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap'); */
+.home_container{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+header{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100% ;
+    transform-style: preserve-3d;
+    z-index:-1; 
+} 
+.home_img  {
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index:-1;
+   
+}
+/* .s2{
+    transform: translateZ(-5px) scale(1.5);
+} */
+.home_img{
+    transform: translateZ(-10px) scale(2);
+}
+h2{color:#fff6ec;
+    text-shadow: 0 0 5px black;
+    font-size: 3rem;
+
+    
+    }
+h1{
+    color:whitesmoke;
+    text-shadow: 0 0 5px black;
+    font-size: 4rem;
+    margin-top: -40px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight:bold ;
+    height: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    animation:animate 2s steps(15);
+
+
+}
+.rolling{
+    background-color: black;
+    color:white;
+}
+#typewriter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;  
+    transform: translate(-90px,200px);
+}
+span{
+    font-weight: 100;
+    font-size:40px;
+    color: rgb(255,75,141);
+    letter-spacing: 5px;
+    background:linear-gradient(90deg,#ff0000,#ffff00,#ff00f3,#0033ff,#ff00c4,#ff0000);
+    background-size: 400%;
+    -webkit-text-fill-color: transparant;
+    -webkit-background-clip:text ;
+    /* color:#dd7732; */
+}
+span::after{
+    content: "";
+    margin-left: 4px;
+    width: 1px;
+    height: 5%;
+    border-right: 4px solid #dd7732;
+    animation:blink 0.5s infinite ease;
+}
+@keyframes animate{
+    0%{width: 0%;}
+    100%{width:800px ;}
+}
+@keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity:1 ;}
+}

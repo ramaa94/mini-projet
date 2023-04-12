@@ -204,3 +204,18 @@ text-shadow: 0 0 5px black;}
     background-color: black;
     color:white;
 }
+p{position:absolute;
+    color:red;
+    transform: translate(-50%,-50%);
+    width: 40px;
+    animation:animate 2s steps(15);
+    height: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 400px;
+    font-size: 60px;
+}
+@keyframes animate{
+    0%{width: 0%;}
+    100%{width:400px ;}
+}
